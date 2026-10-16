@@ -1,0 +1,33 @@
+{
+  "data_kind": "retained medical coursework results",
+  "experiment_date": "2026-01",
+  "source": {
+    "repository": "EEC174ABY/lab-2-supervised-ml-ChenSiyun1234",
+    "commit": "19198b215b024105d0c0024723d9a024bcdf506b",
+    "notebook": "Lab2.ipynb",
+    "git_blob": "c21bd85b5cb4257b629284aec24f44f722e2d7f8",
+    "verified_on": "2026-10-16"
+  },
+  "report_precision": "comparison metrics copied from saved two-decimal classification reports",
+  "training_breaths": 5972,
+  "validation_breaths": 1247,
+  "validation_class_counts": {"Non-PVA": 842, "BSA": 301, "DTA": 104},
+  "prediction_adjustment": "original notebook adjusts the preceding array prediction for DTA; learned and rule pipelines have different conditions",
+  "models": {
+    "Random Forest": {"accuracy": 0.89, "macro_f1": 0.63, "dta_recall": 0.02},
+    "Logistic Regression": {"accuracy": 0.78, "macro_f1": 0.55, "dta_recall": 0.06},
+    "KNN": {"accuracy": 0.65, "macro_f1": 0.51, "dta_recall": 0.21},
+    "Feature Rules": {"accuracy": 0.90, "macro_f1": 0.81, "dta_recall": 0.54}
+  },
+  "two_feature_random_forest": {"features": ["tve", "ep_auc"], "accuracy": 0.63, "macro_f1": 0.41},
+  "ten_seed_random_forest": {"runs": 10, "dta_precision_mean": 0.9250, "dta_recall_mean": 0.0365, "dta_f1_mean": 0.0680},
+  "stratified_five_fold_logistic_regression": {
+    "split_unit": "individual breath",
+    "shuffle": true,
+    "random_state": 42,
+    "macro_precision_mean": 0.7415,
+    "macro_recall_mean": 0.6920,
+    "macro_f1_mean": 0.7079,
+    "macro_f1_by_fold": [0.7096, 0.7208, 0.6971, 0.6971, 0.7150]
+  }
+}
