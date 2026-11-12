@@ -2,7 +2,7 @@
 
 **From flow and pressure signals to interpretable breathing features and per-class evaluation.**
 
-I built a medical-data classification project in EEC 174 at UC Davis to identify patient–ventilator asynchrony: breaths where the patient's effort and the ventilator's delivery are out of sync. I extracted breathing features, compared three classifiers, implemented supplied domain rules, and studied the results by class.
+I built a medical-data classification project in a course to identify patient–ventilator asynchrony: breaths where the patient's effort and the ventilator's delivery are out of sync. I extracted breathing features, compared three classifiers, implemented supplied domain rules, and studied the results by class.
 
 The main finding: **89% accuracy hid approximately 2% recall for double-trigger cases.** Looking at each class changed which baseline appeared useful.
 
